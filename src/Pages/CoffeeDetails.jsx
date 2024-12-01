@@ -3,7 +3,7 @@
 const CoffeeDetails = () => {
     return (
         <div>
-            
+            Coffee Details
         </div>
     );
 };
