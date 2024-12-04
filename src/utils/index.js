@@ -24,7 +24,7 @@ const addFavorite = (coffee) => {
     if(isExist) return toast.error('This item already exists!');
 
     favorites.push(coffee);
-    console.log(favorites);
+    // console.log(favorites);
 
     localStorage.setItem('favorites', JSON.stringify(favorites));
     toast.success('Successfully created!');
@@ -34,6 +34,12 @@ const addFavorite = (coffee) => {
 
 
 // remove a coffee from local storage
+const removeFavorite = (id) => {
+    const favorites = getAllFavorites();
+    const remaining = favorites.filter(coffee => coffee.id !== id);
+    localStorage.setItem('favorites', JSON.stringify(remaining));
+    toast.success('Successfully Removed!');
+}
 
 
-export { addFavorite, getAllFavorites };
+export { addFavorite, getAllFavorites, removeFavorite };
