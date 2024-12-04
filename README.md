@@ -1,6 +1,7 @@
 # COFFEE_BOOK
 
 - [Netlify Live Demo](https://coffee-book-ph1.netlify.app/)
+- [Vercel Live Demo](https://coffee-bbok.vercel.app/)
 - [Resources Repository](https://github.com/shakilahmedatik/coffee-book-resources)
 
 Packages used in this project:
